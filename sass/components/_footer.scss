@@ -1,0 +1,185 @@
+/* футер */
+.list .adress {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 1.7;
+  color: $white;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.list-contacts {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $list-contacts;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer .footer-adress:not(:last-child) {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 9px;
+  }
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $background-footer;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.list-adress {
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
+
+.list-adress .list {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.join {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+}
+
+.join-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.join-list .edit {
+  background-color: $icon-color-edit;
+  border-radius: 50%;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
+}
+
+.join-list {
+  display: flex;
+  justify-content: center;
+}
+
+.join-list .item {
+  margin-right: 10px;
+}
+
+.container-footer {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+.tabletFooter {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.signForm {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.signButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 10px 0;
+
+  width: 200px;
+
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white;
+  background-color: $accent;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
+}
+
+.signIcon {
+  margin-left: 10px;
+}
+
+.formInput {
+  margin: 0;
+  width: 450px;
+  margin-bottom: 20px;
+  padding: 15px 16px;
+  color: $white;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  background-color: rgba(33, 150, 243, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+  }
+}
+
+.formInput::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footerForm {
+  display: flex;
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}

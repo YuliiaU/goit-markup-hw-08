@@ -1,0 +1,25 @@
+/* лого */
+.logo {
+    display: flex;
+
+    color: $logo-studio;
+    font-family: $logo-text,sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.footer .logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.studio {
+    color: $white;
+}
+.web {
+    color: $accent;
+}

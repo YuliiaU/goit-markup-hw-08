@@ -1,0 +1,94 @@
+/* герой */
+.hero {
+  height: 400px;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 118px 0;
+
+  background-color: $background-footer;
+  text-align: center;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/mobHero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+  }
+}
+
+@media screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/mobHero@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: url(../../images/tabHero.jpg);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/tabHero@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: url(../../images/desHero.jpg);
+  }
+
+  @media screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/desHero@2x.jpg);
+    }
+  }
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero .button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+  color: $white;
+  background-color: $accent;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+}

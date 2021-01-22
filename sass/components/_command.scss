@@ -1,0 +1,84 @@
+/* команда */
+
+.command {
+  padding-top: 55px;
+  padding-bottom: 60px;
+
+  background-color: $background-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 88px;
+  }
+}
+
+.command-content {
+  padding: 30px 0 24px;
+  text-align: center;
+}
+
+.command .list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.command-card {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100%-90px) / 4);
+    margin-right: 30px;
+  }
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &:nth-child(4n) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
+    }
+  }
+
+  background-color: $white;
+  border: 1px solid $outline-cards;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.list .name {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $title-text-color;
+}
+
+.list .position {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  color: $primery-text-color;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+}
