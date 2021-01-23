@@ -3,12 +3,12 @@
 .header {
   background-color: $white;
   border-bottom: 1px solid $border-color;
-  position: fixed;
+
   width: 100%;
-  z-index: 66;
+  z-index: 2;
 
   @media screen and (max-width: 767px) {
-    position: relative;
+    position: fixed;
   }
 }
 /* навигация */
@@ -17,11 +17,6 @@
   justify-content: space-between;
   display: flex;
   align-items: center;
-
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
 }
 
 .nav-menu {
@@ -242,7 +237,7 @@
     left: 0;
     width: 100%;
     z-index: 66;
-    border-top: 1px solid $border-color;
+
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
       0px 1px 3px rgba(0, 0, 0, 0.16);
 

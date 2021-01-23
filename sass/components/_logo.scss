@@ -1,25 +1,30 @@
 /* лого */
 .logo {
-    display: flex;
+  display: flex;
 
-    color: $logo-studio;
-    font-family: $logo-text,sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+  color: $logo-studio;
+  font-family: $logo-text, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+    display: block;
+  }
 }
 
 .footer .logo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .studio {
-    color: $white;
+  color: $white;
 }
 .web {
-    color: $accent;
+  color: $accent;
 }
