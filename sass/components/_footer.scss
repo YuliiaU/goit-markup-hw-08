@@ -33,6 +33,11 @@
 
   background-color: $background-footer;
 
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
   }
@@ -152,7 +157,8 @@
 
 .formInput {
   margin: 0;
-  width: 450px;
+  max-width: 450px;
+
   margin-bottom: 20px;
   padding: 15px 16px;
   color: $white;

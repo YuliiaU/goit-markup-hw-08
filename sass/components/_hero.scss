@@ -18,6 +18,11 @@
   background-position: center;
   background-size: cover;
 
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     height: 600px;
     padding-top: 200px;

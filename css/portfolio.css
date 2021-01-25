@@ -15,7 +15,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 img {
@@ -686,6 +685,13 @@ img {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 767px) {
+  .footer {
+    position: relative;
+    top: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer {
     display: -webkit-box;
@@ -838,7 +844,7 @@ img {
 
 .formInput {
   margin: 0;
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 20px;
   padding: 15px 16px;
   color: #FFFFFF;

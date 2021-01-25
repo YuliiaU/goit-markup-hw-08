@@ -6,6 +6,11 @@
 
   background-color: $background-color;
 
+  @media screen and (max-width: 767px) {
+    position: relative;
+    top: 60px;
+  }
+
   @media screen and (min-width: 1200px) {
     padding-top: 100px;
     padding-bottom: 88px;
