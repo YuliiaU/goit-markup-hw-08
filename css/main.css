@@ -845,6 +845,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .client-list .item:not(:last-child) {
+    width: calc((100% - 150px) / 6);
     margin-right: 30px;
   }
 }
@@ -1163,7 +1164,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 609px;
+  min-height: 609px;
   max-width: 450px;
   z-index: 100;
   background-color: #FFFFFF;
@@ -1177,7 +1178,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    height: 581px;
+    min-height: 581px;
     width: 528px;
   }
 }
